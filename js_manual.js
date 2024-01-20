@@ -31,11 +31,64 @@ while(index < ruupu.length){
 
 //★ if文 else文
 //もし～ならば等の条件分岐
-if(hensuuHukusuu.length > 12){
+
+if (条件式A) {
+    条件Aが成り立つときの処理
+  }
+  else if (条件式B) {
+    条件Bが成り立つときの処理  
+  }
+  else {
+    どの条件も成り立たないときの処理
+  }
+
+
+  if(hensuuHukusuu.length > 12){
     console.log('if表示');
 }else{
     console.log('else表示')
 }
+
+//----------------------------------------------------------
+
+//★ switch文
+//式（変数など）の値によって処理を切り替える
+
+switch (式) {
+    case 値1:
+      式が値1のときの処理
+      break;
+    case 値2:
+      式が値2のときの処理
+      break;
+    case 値3:
+      式が値3のときの処理
+      break;
+    default:
+      式がいずれのcaseにも当てはまらないときの処理
+      break;
+  }
+  
+  // 変数numに0～2までのランダムな整数を代入する
+let num = Math.floor(Math.random() * 3);
+
+// 変数numの値によって出力する文字列を切り替える
+switch (num) {
+    case 2:
+      console.log('小吉です');
+      break;
+    case 3:
+      console.log('中吉です');
+      break;
+    case 4:
+      console.log('大吉です');
+      break;
+     default:
+       console.log('末吉です');
+       break;
+
+    }
+
 
 //----------------------------------------------------------
 
